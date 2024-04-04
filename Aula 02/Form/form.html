@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados Clientes</title>
+    <style>
+
+        form{
+        width:60%;
+        margin: 40px auto;
+        border: 1px solid black;
+
+        }
+
+        .lbl1 {
+            display: inline-block;
+            width: 90px;
+            color: blue;
+        }
+
+      
+
+        .div1 {
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .spn{
+            font-size: 20px;
+            color: gray;
+        }
+        
+        .BtnEnviar{
+            margin-top: 30px;
+        }
+
+        .BtnLimpar{
+            margin-top: 30px;
+        }
+    </style>
+
+ 
+</head>
+
+<body>
+    <form class="form" method="post" action="dados.jsp">
+        <div class="div1">
+            <label class="lbl1"> <span class="spn">&#9786;</span> Nome</label>
+            <input type="text" name='name' size="50" maxlength="50" required autofocus placeholder="Digite o seu Nome">
+        </div>
+
+
+
+        <div class="div1">
+           
+            <label class="lbl1"> <span class="spn"> &#127969;</span> Endereco</label>
+            <input type="text" name='name' size="50" maxlength="50" required autofocus placeholder="Endereco">
+        </div>
+
+        
+        <div class="div1">
+        
+            <label class="lbl1" > <span class="spn"> &#128222;</span>Telefone</label>
+            <input type="telefone" name='name' size="50" maxlength="50" required autofocus placeholder="(xx) xxxxx-xxxx">
+
+            <label class="lbl2">UF</label>
+        
+        <select>
+            <option value="SP">SP</option>
+            <option value="RJ">RJ</option>
+            <option value="MG">MG</option>
+            <option value="PE">PE</option>
+            <option value="RS">RS</option>
+            <option value="BA">BA</option>
+        </select>
+         
+        <label class="lbl2"> Dt.Nasc</label>
+        <input type="date" name="dtnasc">
+        </div>
+        
+    </div>
+        <div class="div1">
+            <label class="lbl1">Senha</label>
+            <input type="password" name='name' size="50" maxlength="50" required autofocus placeholder="Senha">
+        </div>
+
+        <div class="div1">
+            <input type="radio" name="sexo">
+            <label class="lbl1">Masculino</label>
+            <input type="radio" name="sexo">
+            <label class="lbl1">Feminino</label>
+
+            <input type="checkbox" name="fut">
+            <label class="lbl1">Futebol</label>
+            <input type="checkbox" name="Volei">
+            <label class="lbl1">Volei</label>
+
+            
+            
+           
+        </div>
+        
+        <div class="div1">
+            <label class="lbl1">Observação</label>
+            <textarea name="obs" rows="4" cols="50"></textarea>  
+
+        </div>
+
+        <div class="div1">
+            <button class="BtnEnviar" name="BtnEnviar" type="submit">Enviar</button>
+            <button class="BtnLimpar" name="BtnLimpar" type="Limpar">Limpar</button>
+        </div>
+    </form>
+</body>
+
+</html>

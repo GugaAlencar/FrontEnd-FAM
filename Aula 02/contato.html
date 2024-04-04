@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="contato.css">
+    <title>Contatos</title>
+</head>
+
+<body>
+    <header>
+        <div class="cabecalho">
+
+            <h1 class="tittle"> Formulário de Contato</h1>
+
+            <div class="links">
+                <ul>
+                    <a href="index.html">HOME</a>
+                    <a href="Projetos.html">Projetos</a>
+                    <a href="contato.html">Contato</a>
+                    <a href="">Sobre</a>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section class="form">
+        <div class="formularioContato">
+
+            <form action="#" method="post" enctype="multipart/form-data">
+                <label>
+                    <span><i class="icon icon-user-1"></i> Nome</span>
+                    <input type="text" name="nome" required="">
+                </label>
+
+                <label>
+                    <span><i class="icon icon-email"></i> E-mail</span>
+                    <input type="text" name="email" class="fade_8S">
+                </label>
+                <label>
+                    <span><i class="icon icon-flag"></i> Assunto</span>
+                    <input type="text" name="assunto" required="">
+                </label>
+
+                <label>
+                    <span><i class="icon icon-comment"></i> Mensagem</span>
+                    <textarea name="mensagem" rows="3" required=""></textarea>
+                </label>
+
+                <input type="hidden" name="acao" value="enviar" />
+                <button class="btn-envia" title="Enviar"><b class="icon icon-paper-plane-o"> Enviar</b></button>
+
+            </form>
+        </div>
+    </section>
+</body>
